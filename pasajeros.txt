@@ -1,0 +1,3 @@
+felipe|felipe_garcia@gmail.com|12345|Javeriana|3192729725|1014
+lucky|luckysito@gmail.com|54321|Javeriana|3192729725|8749
+dani|daniela@gmail.com|54321|Javeriana|3192729725|8749

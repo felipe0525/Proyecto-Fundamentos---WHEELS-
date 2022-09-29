@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="333.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheels.Controller">
+   <children>
+      <AnchorPane fx:id="panelPrincipal" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6497b2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="231.0" layoutX="52.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="43.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#botonIniciar" prefHeight="36.0" prefWidth="248.0" style="-fx-background-color: #035c96;" text="INICIAR SESIÓN" textAlignment="CENTER" textFill="#b3cee1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="43.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#botonRegsitrarse" prefHeight="36.0" prefWidth="248.0" style="-fx-background-color: #fcb61d;" text="REGISTRARSE" textAlignment="CENTER" textFill="#04396d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="102.0" layoutY="455.0" text="Terminos &amp; Condiciones" textFill="#04396d" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="291.0" layoutY="14.0" onMouseClicked="#botonSalir" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Icono_Salir.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelIncio" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6497b2;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="184.0" layoutX="84.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="43.0" layoutY="402.0" mnemonicParsing="false" onMouseClicked="#botonIniciarSesion" prefHeight="36.0" prefWidth="248.0" style="-fx-background-color: #035c96;" text="INICIAR SESIÓN" textAlignment="CENTER" textFill="#b3cee1" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="402.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="iniciarCorreo" layoutX="93.0" layoutY="239.0" prefHeight="30.0" prefWidth="248.0" promptText="Correo Institucional" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+            <TextField fx:id="iniciarContrasena" layoutX="16.0" layoutY="308.0" prefHeight="30.0" prefWidth="248.0" promptText="Contraseña" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#botonAtras" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Icono_Atras.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelIzquierdoPasajero" layoutX="10.0" layoutY="10.0" prefHeight="503.0" prefWidth="167.0" style="-fx-background-color: #b3cee1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="166.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="5.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#botonPasajero" prefHeight="481.0" prefWidth="157.0" style="-fx-background-color: #b3cee1;" text="PASAJERO" textAlignment="CENTER" textFill="#035c96" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="157.0" fitWidth="153.0" layoutX="7.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="289.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="61.0">
+               <image>
+                  <Image url="@Images/Pasajero.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelDerechoConductor" layoutX="167.0" layoutY="6.0" prefHeight="503.0" prefWidth="167.0" style="-fx-background-color: #6497b2;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="165.5" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="5.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#botonConductor" prefHeight="36.0" prefWidth="157.0" style="-fx-background-color: #6497b2;" text="CONDUCTOR" textAlignment="CENTER" textFill="#035c96" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="153.0" fitWidth="147.0" layoutX="10.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.5" AnchorPane.topAnchor="293.0">
+               <image>
+                  <Image url="@Images/Conductor.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelRegsitroPasajero" layoutX="50.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b3cee1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="textCorreoP" layoutX="52.0" layoutY="57.0" prefHeight="30.0" prefWidth="233.0" promptText="Correo Institucional" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="125.0" />
+            <TextField fx:id="textNombreP" layoutX="52.0" layoutY="85.0" prefHeight="30.0" prefWidth="233.0" promptText="Nombre Completo" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="70.0" />
+            <PasswordField fx:id="textContraseñaP" layoutX="50.0" layoutY="203.0" prefHeight="30.0" prefWidth="233.0" promptText="Contraseña" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="180.0" />
+            <TextField fx:id="textUniversidadP" layoutX="52.0" layoutY="273.0" prefHeight="30.0" prefWidth="233.0" promptText="Universidad" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="235.0" />
+            <Button layoutX="43.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#botonRegistrarPasajero" prefHeight="36.0" prefWidth="248.0" style="-fx-background-color: #fcb61d;" text="REGISTRARSE" textAlignment="CENTER" textFill="#035c96">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textCodigoP" layoutX="43.0" layoutY="343.0" prefHeight="30.0" prefWidth="233.0" promptText="Codigo Universidad" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="345.0" />
+            <TextField fx:id="textTelefonoP" layoutX="62.0" layoutY="283.0" prefHeight="30.0" prefWidth="233.0" promptText="Telefono" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="290.0" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="17.0" layoutY="16.0" onMouseClicked="#botonAtras" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Icono_Atras.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="panelRegsitroConductor" prefHeight="503.0" prefWidth="333.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="698.0" prefWidth="330.0" style="-fx-background-color: #6497b2;">
+               <children>
+                  <TextField fx:id="textUniversidadC" prefHeight="30.0" prefWidth="233.0" promptText="Universidad" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="235.0" />
+                  <TextField fx:id="textPlacaC" layoutX="50.0" layoutY="441.0" prefHeight="30.0" prefWidth="233.0" promptText="Placa" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="435.0" />
+                  <TextField fx:id="textCorreoC" prefHeight="30.0" prefWidth="233.0" promptText="Correo Institucional" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="135.0" />
+                  <TextField fx:id="textNombreC" prefHeight="30.0" prefWidth="233.0" promptText="Nombre Completo" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="35.0" />
+                  <Button layoutX="42.0" layoutY="668.0" mnemonicParsing="false" onMouseClicked="#botonRegistrarConductor" prefHeight="36.0" prefWidth="248.0" style="-fx-background-color: #fcb61d;" text="REGISTRARSE" textAlignment="CENTER" textFill="#035c96" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="635.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="textModeloC" layoutX="50.0" layoutY="391.0" prefHeight="30.0" prefWidth="233.0" promptText="Modelo" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="385.0" />
+                  <TextField fx:id="textMarcaC" layoutX="50.0" layoutY="341.0" prefHeight="30.0" prefWidth="233.0" promptText="Marca" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="335.0" />
+                  <PasswordField fx:id="textContraseñaC" prefHeight="30.0" prefWidth="233.0" promptText="Contraseña" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="185.0" />
+                  <TextField fx:id="textCedulaC" prefHeight="30.0" prefWidth="233.0" promptText="Cedula" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="85.0" />
+                  <TextField fx:id="textTelefonoC" layoutX="49.0" layoutY="289.0" prefHeight="30.0" prefWidth="233.0" promptText="Telefono" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="285.0" />
+                  <TextField fx:id="textPolizaC" layoutX="49.0" layoutY="493.0" prefHeight="30.0" prefWidth="233.0" promptText="Numero de Poliza" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="485.0" />
+                  <TextField fx:id="textChasisC" layoutX="49.0" layoutY="543.0" prefHeight="30.0" prefWidth="233.0" promptText="Numero de Chasis" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="535.0" />
+                  <TextField fx:id="textFechaExpC" layoutX="49.0" layoutY="593.0" prefHeight="30.0" prefWidth="233.0" promptText="Fecha Expedición (DD,MM,AAAA)" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="585.0" />
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="6.0" layoutY="7.0" onMouseClicked="#botonAtras" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Icono_Atras.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane fx:id="panelMenu" layoutX="56.0" layoutY="74.0" prefHeight="56.0" prefWidth="333.0" style="-fx-background-color: #6497b2;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="333.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Icono_Usuario.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Icono_Ruta.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Icono_Notificaciones.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#botonSalir" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Icono_Salir.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PanelUsuario" prefHeight="429.0" prefWidth="333.0" style="-fx-background-color: #6497b2;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="36.0" layoutY="175.0" prefHeight="40.0" prefWidth="262.0" text="APLICACION EN PROCESO..." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="44.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/Puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="118.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/Puntero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="194.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Images/Puntero.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

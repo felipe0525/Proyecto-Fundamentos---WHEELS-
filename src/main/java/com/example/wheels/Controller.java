@@ -219,6 +219,7 @@ public class Controller {
 
         Pasajero.almacenarPasajero();
         Conductor.almacenarConductor();
+        boolean error = false;
 
         for (int i = 0; i < Pasajero.pasajeros.size(); i++) {
             if (!textCorreoP.getText().equals(Pasajero.pasajeros.get(i).getCorreo())) {
@@ -242,14 +243,16 @@ public class Controller {
                 PanelUsuario.setVisible(false);
 
                 i = Pasajero.pasajeros.size();
+                error = true;
             }
         }
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setTitle("Error");
-        alert.setContentText("Correo ya existente");
-        alert.showAndWait();
-
+        if (error == false) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Correo ya existente");
+            alert.showAndWait();
+        }
     }
 
     public void botonRegistrarConductor(MouseEvent event) { // metodo de boton para llevar al registro de conductor
@@ -257,6 +260,7 @@ public class Controller {
 
         Pasajero.almacenarPasajero();
         Conductor.almacenarConductor();
+        boolean error = false;
 
         for (int i = 0; i < Conductor.conductores.size(); i++) {
             if (!textCorreoC.getText().equals(Conductor.conductores.get(i).getCorreo())) {
@@ -280,14 +284,16 @@ public class Controller {
                 PanelUsuario.setVisible(false);
 
                 i = Conductor.conductores.size();
+                error = true;
             }
         }
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(null);
-        alert.setTitle("Error");
-        alert.setContentText("Correo ya existente");
-        alert.showAndWait();
-
+        if (error == false) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Correo ya existente");
+            alert.showAndWait();
+        }
     }
 
 }

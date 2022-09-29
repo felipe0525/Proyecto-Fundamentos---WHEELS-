@@ -204,12 +204,12 @@ public class Controller {
 
     public void botonConductor(MouseEvent event) { // metodo de boton para llevar al registro de conductor
 
-        panelPrincipal.setVisible(true);
+        panelPrincipal.setVisible(false);
         panelIncio.setVisible(false);
         panelIzquierdoPasajero.setVisible(false);
         panelDerechoConductor.setVisible(false);
         panelRegsitroPasajero.setVisible(false);
-        panelRegsitroConductor.setVisible(false);
+        panelRegsitroConductor.setVisible(true);
         panelMenu.setVisible(false);
         PanelUsuario.setVisible(false);
 
